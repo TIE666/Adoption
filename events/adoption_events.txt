@@ -1,9 +1,0 @@
-# when adoption accepted
-event_adoption.0001 = {
-	title = event_adoption.0001.t
-	desc = event_adoption.0001.desc
-
-	option = {
-		name = event_adoption.0001.a
-	}
-}
