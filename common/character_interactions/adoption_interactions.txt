@@ -103,7 +103,7 @@ set_adoptee_as_successor = {
 
 	is_valid_showing_failures_only = {
 		scope:actor = {
-			age > 50
+			age > 45
 		}
 		scope:recipient = {
 			NOT = { is_primary_heir_of = scope:actor }
