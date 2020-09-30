@@ -11,3 +11,6 @@
  GLOBAL_BECOME_ADOPTEE:0 "Becomes [TARGET_CHARACTER.GetShortUINamePossessive] adoptee"
  THEY_GET_A_ADOPTOR:0 "[TARGET_CHARACTER.GetShortUIName|U] becomes [CHARACTER.GetShortUINamePossessive] adoptor"
  GLOBAL_BECOME_ADOPTOR:0 "Becomes [TARGET_CHARACTER.GetShortUINamePossessive] adoptor"
+ set_adoptee_as_successor:0 "Make Successor"
+ set_adoptee_as_successor_desc:0 "Making the adoptive child becomes your designated heir"
+ 

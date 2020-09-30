@@ -76,3 +76,49 @@ adopt_child = {
 		
 	}
 }
+
+set_adoptee_as_successor = {
+
+	desc = set_adoptee_as_successor_desc
+
+	common_interaction = yes
+	popup_on_receive = yes
+	pause_on_receive = yes
+	greeting = positive
+	interface_priority = 50
+	ai_min_reply_days = 10
+	ai_max_reply_days = 15
+
+	is_shown = {
+		scope:actor = {
+			any_child = {
+				count = all
+				is_alive = no
+			}
+		}
+		scope:recipient = {
+			has_relation_adoptor = scope:actor
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor = {
+			age > 50
+		}
+		scope:recipient = {
+			NOT = { is_primary_heir_of = scope:actor }
+		}
+	}
+
+	auto_accept = yes
+
+	on_accept = {
+		scope:actor = {
+			set_designated_heir = scope:recipient
+		}
+	}
+
+	cost = {
+		prestige = 500
+	}
+}

@@ -11,3 +11,5 @@
  GLOBAL_BECOME_ADOPTEE:0 "成为 [TARGET_CHARACTER.GetShortUINamePossessive] 收养的孩子"
  THEY_GET_A_ADOPTOR:0 "[TARGET_CHARACTER.GetShortUIName|U] 成为了 [CHARACTER.GetShortUINamePossessive] 养育者"
  GLOBAL_BECOME_ADOPTOR:0 "成为 [TARGET_CHARACTER.GetShortUINamePossessive] 养育者"
+ set_adoptee_as_successor:0 "指定为接班人"
+ set_adoptee_as_successor_desc:0 "收养的孩子将变为你的指定继承人。"

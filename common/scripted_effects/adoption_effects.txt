@@ -17,6 +17,13 @@ set_adoption = {
 			}
 			visit_court_of = scope:adoptor.court_owner
 		}
+		# set house to adoptor's house if lowborn
+		if = {
+			limit = {
+				scope:adoptee = { is_lowborn = yes }
+			}
+			set_house = scope:adoptor.house
+		}
 	}
 	scope:adoptor = {
 		set_relation_adoptee = scope:adoptee
