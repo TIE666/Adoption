@@ -5,8 +5,6 @@
  adopt_child_desc:0 "收养一个孩子，如果你没有儿子或女儿这也许是件好事。"
  ADOPTOR_LABEL:0 "养育者"
  ADOPTEE_LABEL:0 "养子"
- NOT_HAS_MOTHER_REASON:0 "没有母亲：$VALUE|=+0$"
- NOT_HAS_FATHER_REASON:0 "没有父亲：$VALUE|=+0$"
  adopt_child_accepted.t:0 "孩子被收养"
  adopt_child_accepted.tooltip:0 "[recipient.GetShortUIName|U] 加入了你的家庭。"
  THEY_GET_A_ADOPTEE:0 "[TARGET_CHARACTER.GetShortUIName|U] 成为了 [CHARACTER.GetShortUINamePossessive] 收养的孩子"
@@ -15,4 +13,3 @@
  GLOBAL_BECOME_ADOPTOR:0 "成为 [TARGET_CHARACTER.GetShortUINamePossessive] 养育者"
  set_adoptee_as_successor:0 "指定为接班人"
  set_adoptee_as_successor_desc:0 "收养的孩子将变为你的指定继承人。"
- adopt_child_imprisoned:0 "收养孩子"
