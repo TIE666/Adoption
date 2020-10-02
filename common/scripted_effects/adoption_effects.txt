@@ -5,6 +5,15 @@
 
 set_adoption = {
 	scope:adoptee = {
+		# imprisoned case
+		if = {
+			limit = {
+				scope:adoptee = {
+					is_imprisoned_by = scope:actor
+				}
+			}
+			release_from_prison = yes
+		}
 		# set relation and move adoptee
 		set_relation_adoptor = scope:adoptor
 		if = {
