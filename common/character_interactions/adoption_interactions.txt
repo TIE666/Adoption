@@ -66,11 +66,21 @@ adopt_child = {
 		}
 		# recipient parent's opinion
 		opinion_modifier = {
+			trigger = {
+				scope:recipient = {
+					has_father = yes
+				}
+			}
 			opinion_target = scope:actor
 			who = scope:recipient.father
 			multiplier = 1
 		}
 		opinion_modifier = {
+			trigger = {
+				scope:recipient = {
+					has_mother = yes
+				}
+			}
 			opinion_target = scope:actor
 			who = scope:recipient.mother
 			multiplier = 1
