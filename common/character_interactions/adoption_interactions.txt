@@ -17,27 +17,22 @@ adopt_child = {
 	ai_min_reply_days = 10
 	ai_max_reply_days = 15
 
-	is_shown = {
-		scope:actor = {
-			is_adult = yes
-			num_of_relation_adoptee < 2
-		}
+	is_shown = {  
 		scope:recipient = {
-			is_adult = no
-			is_courtier_of = scope:actor
-			num_of_relation_adoptor = 0
+			is_available_child = yes
+			NOT = { is_child_of = scope:actor }
 		}
 	}
 
 	is_valid_showing_failures_only = {
 		scope:actor = {
 			is_available_adult = yes
+			num_of_relation_adoptee < 2
 			NOT = { has_relation_adoptee = scope:recipient }
 		}
 		scope:recipient = {
 			age < 12
-			is_available_child = yes
-			NOT = { is_child_of = scope:actor }
+			num_of_relation_adoptor = 0
 		}
 	}
 
@@ -136,25 +131,21 @@ adopt_child_imprisoned = {
 	ai_max_reply_days = 15
 
 	is_shown = {
-		scope:actor = {
-			is_adult = yes
-			num_of_relation_adoptee < 2
-		}
 		scope:recipient = {
-			is_adult = no
+			NOT = { is_child_of = scope:actor }
 			is_imprisoned_by = scope:actor
-			num_of_relation_adoptor = 0
 		}
 	}
 
 	is_valid_showing_failures_only = {
 		scope:actor = {
 			is_available_adult = yes
+			num_of_relation_adoptee < 2
 			NOT = { has_relation_adoptee = scope:recipient }
 		}
 		scope:recipient = {
 			age < 12
-			NOT = { is_child_of = scope:actor }
+			num_of_relation_adoptor = 0
 		}
 	}
 
